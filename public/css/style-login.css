@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #555;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9.6rem;
+  margin-bottom: 6.5rem;
+  padding-top: 12rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 6.6rem 0;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.logo--footer img {
+  height: 2rem;
+  padding-left: 1.8rem;
+}
+
+.heading--2 {
+  text-align: center;
+  padding-right: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.cred-message {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #dee2e6;
+}
+
+.form--container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.form--login {
+  width: 33rem;
+}
+
+.form--group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.zmb {
+  margin-bottom: 0 !important;
+}
+
+/* .form--label {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.65rem;
+} */
+
+.form-control-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #339af0;
+}
+
+.form--input {
+  border-radius: 0.85rem;
+  height: 4rem;
+  padding: 1rem;
+  padding-left: 4rem;
+  border: 1px solid #ccc;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  height: 4rem;
+  padding: 0rem 14.1rem;
+  margin-top: 2.2rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 0.85rem;
+  transition: all 0.3s;
+  color: #fff;
+  background-color: #339af0;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #2e8bd8;
+}
+
+.forgot-password {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.link:link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.or {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.sign-up {
+  margin-top: 0.6rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.socials {
+  display: flex;
+}
+
+.footer-link {
+  margin: 0 1.2rem;
+  font-size: 2rem;
+  color: #555;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-left: 5rem;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9999;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1.6rem 15rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+.alert--success {
+  background-color: #20bf6b;
+}
+.alert--error {
+  background-color: #eb4d4b;
+}
+
+/* 840px  920 height */
+/* 1rem = 1em = 16px */
+
+@media (min-height: 52.5em) and (max-height: 57.5em) {
+  .header {
+    padding-top: 13rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .heading--2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .cred-message {
+    font-size: 1.6rem;
+  }
+
+  .form--container {
+    margin-bottom: 3.6rem;
+  }
+
+  .form--group {
+    margin-bottom: 2.6rem;
+  }
+
+  .form--input {
+    height: 5.2rem;
+    font-size: 1.6rem;
+  }
+
+  .forgot-password {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .or {
+    font-size: 1.7rem;
+  }
+
+  .sign-up {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+
+  .footer {
+    padding: 11.6rem 0;
+  }
+
+  .footer-link {
+    margin: 0 0.6rem;
+    font-size: 2.2rem;
+  }
+
+  .copyright {
+    padding-right: 2rem;
+  }
+
+  .copyright p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    margin-top: 2.8rem;
+    height: 5.2rem;
+  }
+}
+
+/* 360px  375 height */
+/* 1rem = 1em = 16px */
+@media (min-width: 22.5em) and (max-width: 23.45em) {
+}

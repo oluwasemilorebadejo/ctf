@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Authentication System by blac')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='manifest', href='manifest.webmanifest')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='css/style-signup.css')
+    script(type='module', src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+    script(nomodule='', src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+    script(defer='', src='https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js\
+    ')
+    title DOH Challenge | #{title}
+    link(rel="icon" type="image/png" href="data:;base64,iVBORw0KGgo")
+
+
+  body
+    header.header
+      .logo
+        //- img(src='/public/img/blac-logo.png', alt='Logo')
+    main
+      h2.heading--2 New here?
+      p.cred-message Create your account now.
+      .form--container
+        form.form--signup
+          .form--group
+            // <label class="form--label" for="username">Username</label>
+            i.form-control-icon
+              ion-icon(name='mail-outline')
+            input#email.form--input(type='email', placeholder='Enter your email', name='email', required='')
+          .form--group
+            // <label class="form--label" for="username">Username</label>
+            i.form-control-icon
+              ion-icon(name='person-outline')
+            input#name.form--input(type='text', placeholder='Enter username', name='username', required='')
+          .form--group
+            // <label class="form--label" for="password">Password</label>
+            i.form-control-icon
+              ion-icon(name='lock-closed-outline')
+            input#password.form--input(type='password', name='password', placeholder='Enter your password', minlength='8', required='')
+          .form--group.zmb
+            // <label class="form--label" for="password">Password</label>
+            i.form-control-icon
+              ion-icon(name='lock-closed-outline')
+            input#passwordConfirm.form--input(type='password', name='password', placeholder='Confirm your password', minlength='8', required='')
+          .btn--container
+            button.btn.no-wrap Sign Up
+          p.sign-up--ii
+            | Already have an account?
+            a.link(href='/')
+              span(style='color: #339af0') Sign In now
+    footer.footer
+      .logo.logo--footer
+        //- img(src='/public/img/blac-logo.png', alt='Logo')
+      .copyright
+        p Copyright &copy; 2023. All rights reserved.
+      .socials--container
+        ul.socials
+          li
+            a.footer-link(href='#')
+              ion-icon(name='logo-twitter')
+          li
+            a.footer-link(href='#')
+              ion-icon(name='logo-github')
+          li
+            a.footer-link(href='#')
+              ion-icon(name='logo-linkedin')
+    script(src="/js/bundle.js") 
